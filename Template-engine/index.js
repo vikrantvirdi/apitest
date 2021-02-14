@@ -7,7 +7,7 @@ const staticPath =path.join(__dirname,"public");
 app.use(express.static(staticPath));
 
 app.get("/",(req,res)=>{
-    res.send("vikugi");
+    res.send("vikuui");
 });
 app.listen(port,()=>{
     console.log(`listeninng `)
