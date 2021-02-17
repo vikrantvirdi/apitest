@@ -7,7 +7,7 @@ request(url,function(err,res,body){
     var data=JSON.parse(body);
     const cel = `${data.main['temp']}`-273.15 ;
     response.write("<html><body><div id='container'>");
-    response.write("<h1>"+ 'nCity Name:'+ data['name']+'<br>'+'</h1>');
+    response.write("<h1>"+ 'n1City Name:'+ data['name']+'<br>'+'</h1>');
     response.write("<h2>"+ 'Temperature:'+ data.main['temp']+'<br>wind:'+ data.main['feels_like']+'<br>'+'</h1>');
     response.write("</div></body></html>");
     response.end();
