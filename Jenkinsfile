@@ -5,7 +5,7 @@ pipeline{
             steps{
                 echo "Taking backup of Primary server"
                 // Replace IP address with hostname of your environment
-                sh 'rsync -a jenkins@72.251.224.47:docker exec 97f253336918/var/jenkins_home/ docker exec 02ef61114ceb /var/jenkins_home/-"`date +"%d-%m-%Y-%H-%M"`"'
+                sh 'rsync -a jenkins@72.251.224.47:/var/jenkins_home/ /var/jenkins_primary_server_backup/jenkins-"`date +"%d-%m-%Y-%H-%M"`"'
                               
             }
         }
